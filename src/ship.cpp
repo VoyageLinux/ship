@@ -66,7 +66,7 @@ std::ostream& operator<<(std::ostream& os, const ShipAction& action) {
 std::unordered_map<std::string, PackageManagerCommands> package_managers = {
     {"ship", {"sudo ship", "sudo ship search", "sudo ship install", "sudo ship remove"}},
     {"apk", {"sudo apk", "sudo apk search", "sudo apk add", "sudo apk del"}},
-    {"apt-get", {"sudo apt-get", "sudo apt-get search", "sudo apt-get install", "sudo apt-get remove"}},
+    {"apt-get", {"sudo apt-get", "sudo apt-cache search", "sudo apt-get install", "sudo apt-get remove"}},
     {"dnf", {"sudo dnf", "sudo dnf search", "sudo dnf install", "sudo dnf remove"}},
     {"zypper", {"sudo zypper", "sudo zypper search", "sudo zypper install", "sudo zypper remove"}},
     {"emerge", {"sudo emerge", "sudo emerge --search", "sudo emerge", "sudo emerge --unmerge"}},
@@ -75,7 +75,7 @@ std::unordered_map<std::string, PackageManagerCommands> package_managers = {
     {"apx", {"sudo apx", "sudo apx search", "sudo apx install", "sudo apx remove"}},
     {"pkgtool", {"sudo pkgtool", "sudo pkgtool search", "sudo pkgtool install", "sudo pkgtool remove"}},
     {"xbps", {"sudo xbps", "sudo xbps-query -Rs", "sudo xbps-install", "sudo xbps-remove"}},
-    {"paludis", {"sudo paludis", "sudo cave search", "sudo cave resolve -x", "sudo cave uninstall"}},
+    {"paludis", {"sudo cave", "sudo cave search", "sudo cave resolve -x", "sudo cave uninstall"}},
     {"urpmi", {"sudo urpmi", "sudo urpmq", "sudo urpmi", "sudo urpme"}},
     {"tce-load", {"sudo tce-load", "sudo tce-ab search", "sudo tce-load -wi", "sudo tce-remove"}},
     {"equo", {"sudo equo", "sudo equo search", "sudo equo install", "sudo equo remove"}},
