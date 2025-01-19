@@ -73,7 +73,6 @@ std::unordered_map<std::string, PackageManagerCommands> package_managers = {
     {"pacman", {"sudo pacman", "sudo pacman -Ss", "sudo pacman -S", "sudo pacman -R"}},
     {"yum", {"sudo yum", "sudo yum search", "sudo yum install", "sudo yum remove"}},
     {"apx", {"sudo apx", "sudo apx search", "sudo apx install", "sudo apx remove"}},
-    {"shards", {"sudo shards", "sudo shards search", "sudo shards install", "sudo shards remove"}},
     {"pkgtool", {"sudo pkgtool", "sudo pkgtool search", "sudo pkgtool install", "sudo pkgtool remove"}},
     {"xbps", {"sudo xbps", "sudo xbps-query -Rs", "sudo xbps-install", "sudo xbps-remove"}},
     {"paludis", {"sudo paludis", "sudo cave search", "sudo cave resolve -x", "sudo cave uninstall"}},
